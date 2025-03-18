@@ -1,0 +1,21 @@
+services:
+  app:
+    environment:
+      - FLASK_ENV=production
+    command: gunicorn -w 4 -b :5001 app:app
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok-sv
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - 4040:4040
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+    restart: unless-stopped
