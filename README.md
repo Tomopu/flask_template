@@ -11,7 +11,6 @@ git clone https://github.com/Tomopu/flask_template.git
 
 Create a `.env` file and set your Ngrok token by referring to the `.env.sample` file.
 
----
 
 ## 🛠 Development
 
@@ -39,7 +38,6 @@ To exit the virtual environment, use the following command:
 deactivate
 ```
 
----
 
 ## 📌 Usage
 
@@ -57,7 +55,6 @@ python flask-app/app.py
 ```
 When running the Flask application directly, open `localhost:5001` in your web browser to access the system.
 
----
 
 ### 🎯 Notes
 - Ensure you have Docker and Docker Compose installed before running the application.
