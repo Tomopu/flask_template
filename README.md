@@ -3,11 +3,11 @@
 This repository serves as a development environment template for a Flask application.
 
 ## 🚀 Setup
-Clone this repository using the command below:
+Download this repository using the link below:
 
-```bash
-git clone https://github.com/Tomopu/flask_template.git
-```
+⬇️ [Download This Template](https://github.com/Tomopu/flask_template/archive/refs/heads/main.zip)
+
+Extract the downloaded ZIP file and navigate to the extracted folder.
 
 Create a `.env` file and set your Ngrok token by referring to the `.env.sample` file.
 
