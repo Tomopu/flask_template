@@ -78,3 +78,30 @@ When running the Flask application directly, open `localhost:5001` in your web b
     include = "flask-app"
     ```
 
+## 📂 Project Structure
+```bash
+.
+├── .env.sample
+├── Dockerfile
+├── README.md
+├── compose.prod.yaml
+├── compose.yaml
+├── flask-app
+│   ├── __init__.py
+│   ├── app.py
+│   ├── static
+│   │   ├── favicon.ico
+│   │   ├── images
+│   │   │   └── sample-image.png
+│   │   └── styles
+│   │       ├── index.css
+│   │       └── layout.css
+│   └── templates
+│       ├── index.html
+│       └── layout.html
+├── ngrok.yml
+├── poetry.lock
+└── pyproject.toml
+
+6 directories, 16 files
+```
