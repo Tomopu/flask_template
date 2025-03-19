@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+サンプルページ
+{% endblock%}
+
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css')}}">
+{% endblock %}
+
+{% block main %}
+    <img src="{{url_for('static', filename='images/sample-image.png')}}">
+    <h1>Hello Flask!</h1>
+{% endblock %}
